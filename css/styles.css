@@ -11745,9 +11745,24 @@ html {
   }
   
 
-  .video{
-    width: 300px;
-    height: 400px
+  * Fix for flex layout */
+  .card-body .d-flex {
+    align-items: stretch; /* Fill full height */
+  }
+  
+  /* Text container (left side) */
+  .card-body .d-flex > div:first-child {
+    flex: 1; /* Takes available space but doesn't force shrink */
+    min-width: 40%; /* Prevents text from squeezing media */
+    overflow-y: auto; /* Adds scroll if text overflows */
+    max-height: 470px; /* Matches media height */
+  }
+  
+  /* Media container (right side) */
+  .card-body .d-flex > .carousel {
+    flex: 1; /* Shares space equally */
+    min-width: 50%; /* Minimum width guarantee */
+    max-width: 60%; /* Prevents media from disappearing */
   }
 
 }

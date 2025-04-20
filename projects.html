@@ -42,34 +42,49 @@
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">BioPrint Interactive Anatomy</h2>
-                                            <p> I collaborated with a team of three developers to design and build BioPrint Interactive Anatomy, an AR-based mobile application for medical education, aimed at enhancing anatomy learning through immersive 3D interaction. We developed a functional prototype in Unity (C#), integrating AR technology to allow users to explore a detailed, interactive 3D heart model with dynamic UI controls. The project progressed through initial prototyping phases before discontinuation.</p>
-                                        </div>
-                                        <video  height="470" src="assets\BioPrint.mp4" type= "video/mp4"  controls muted> </video>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p></p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
+                           
+                           <!-- Project Card -->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex">
+            <!-- Text Section (Left) -->
+            <div class="p-5" style="flex: 1; min-width: 40%; max-height: 470px; overflow-y: auto;">
+                <h2 class="fw-bolder">BioPrint Interactive Anatomy</h2>
+                <p>Collaborated with a team of four developers to design and build BioPrint Interactive Anatomy, an AR-based mobile application for medical education, aimed at enhancing anatmy learning through immersive 3D interaction. We developed a functional prototype in Unity (C#), integrating the AR technology to allow users to explore a detailed, interactive 3D heart model with dynamic UI controls. Implemented core features, including a main menu navigation system and real-time user interaction with anatomical structures. The project progressed through initial prototyping phases before discontinuation.</p>
+            </div>
+
+            <!-- Media Carousel (Right) -->
+            <div style="flex: 1; min-width: 60%;">
+                <!-- Carousel with Fixed Aspect Ratio -->
+                <div id="bioprintCarousel" class="carousel slide" data-bs-ride="carousel" 
+                     style="width: 100%; height: 470px; background: #ffffff;"> <!-- Black bg for letterboxing -->
+                    <div class="carousel-inner h-100">
+                        <!-- Image Slide -->
+                        
+                        <div class="carousel-item active h-100">
+                             <img src="assets/GalivexLabs.jpg" class="d-block h-100 mx-auto"  style="object-fit: contain;" alt="UI">
+                        </div>
+                        <!-- Video Slides -->
+                        <div class="carousel-item h-100">
+                            <video class="d-block h-100 mx-auto" controls muted style="object-fit: contain;">
+                                <source src="assets/BioPrint.mp4" type="video/mp4">
+                            </video>
+                           
                         </div>
                     </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bioprintCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bioprintCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</div>
+          
             <!-- Call to action section-->
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
                 <div class="container px-5 my-5">
