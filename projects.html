@@ -16,13 +16,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+
+
     </head>
+
     <body class="d-flex flex-column h-100 bs-dark ">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
                 <div class="container px-5">
-                    <a class="logo-button" href="https://albiberberi.github.io/"><img src = "assets\Albi_Berberi-logo.png" alt="Albi Berberi"/></a>
+                    <a class="navbar-brand" href="https://albiberberi.github.io/"><img src = "assets\Albi_Berberi-logo.png" alt="Albi Berberi" style="max-height: 90px;"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -43,33 +47,31 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                            
-                           <!-- Project Card -->
+<!-- Project Card - Mobile Optimized -->
 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
     <div class="card-body p-0">
-        <div class="d-flex">
-            <!-- Text Section (Left) -->
-            <div class="p-5" style="flex: 1; min-width: 40%; max-height: 470px; overflow-y: auto;">
+        <!-- Stack vertically on mobile -->
+        <div class="d-flex flex-column flex-lg-row">
+            <!-- Text Section -->
+            <div class="p-3 p-lg-5" style="flex: 1; min-width: 40%; max-height: none; overflow-y: visible;">
                 <h2 class="fw-bolder">BioPrint Interactive Anatomy</h2>
-                <p>Collaborated with a team of four developers to design and build BioPrint Interactive Anatomy, an AR-based mobile application for medical education, aimed at enhancing anatmy learning through immersive 3D interaction. We developed a functional prototype in Unity (C#), integrating the AR technology to allow users to explore a detailed, interactive 3D heart model with dynamic UI controls. Implemented core features, including a main menu navigation system and real-time user interaction with anatomical structures. The project progressed through initial prototyping phases before discontinuation.</p>
+                <p class="mb-0">Collaborated with a team of four developers to design and build BioPrint Interactive Anatomy, an AR-based mobile application for medical education, aimed at enhancing anatomy learning through immersive 3D interaction. We developed a functional prototype in Unity (C#), integrating the AR technology to allow users to explore a detailed, interactive 3D heart model with dynamic UI controls. Implemented core features, including a main menu navigation system and real-time user interaction with anatomical structures. The project progressed through initial prototyping phases before discontinuation.</p>
             </div>
 
-            <!-- Media Carousel (Right) -->
+            <!-- Media Carousel -->
             <div style="flex: 1; min-width: 60%;">
-                <!-- Carousel with Fixed Aspect Ratio -->
                 <div id="bioprintCarousel" class="carousel slide" data-bs-ride="carousel" 
-                     style="width: 100%; height: 470px; background: #ffffff;"> <!-- Black bg for letterboxing -->
-                    <div class="carousel-inner h-100">
+                     style="width: 100%; height: auto; min-height: 300px; max-height: 100%; background: #ffffff;">
+                    <div class="carousel-inner" style="height: 100%;">
                         <!-- Image Slide -->
-                        
                         <div class="carousel-item active h-100">
-                             <img src="assets/GalivexLabs.jpg" class="d-block h-100 mx-auto"  style="object-fit: contain;" alt="UI">
+                            <img src="assets/GalivexLabs.jpg" class="d-block w-100 h-100" style="object-fit: contain;" alt="UI">
                         </div>
-                        <!-- Video Slides -->
+                        <!-- Video Slide -->
                         <div class="carousel-item h-100">
-                            <video class="d-block h-100 mx-auto" controls muted style="object-fit: contain;">
+                            <video class="d-block w-100 h-100" controls muted style="object-fit: contain;">
                                 <source src="assets/BioPrint.mp4" type="video/mp4">
                             </video>
-                           
                         </div>
                     </div>
                     <!-- Carousel Controls -->
