@@ -11590,6 +11590,16 @@ html {
   position: relative;
 }
 
+.feature-icon-container {
+  --icon-size: 2rem; /* Control size here */
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--icon-size) * 0.6); /* Icon size relative to container */
+}
+
 .profile {
   position: relative;
   height: 45vw;
