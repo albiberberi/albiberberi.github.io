@@ -55,14 +55,83 @@
         <div class="d-flex flex-column flex-lg-row align-items-stretch h-100">
             
             <!-- Text Section -->
-            <div class="p-3 p-lg-5 d-flex flex-column justify-content-center" style="flex: 1; min-width: 40%;">
+            <div class="p-3 p-lg-5 d-flex flex-column" style="flex: 1; min-width: 40%;">
+                <h2 class="fw-bolder">AI Photo Studio</h2>
+                <p class="mb-0">
+                    AI Photo Studio is a web-based application developed as a semester project for FHOOE (University of Applied Sciences Upper Austria). The platform leverages advanced artificial intelligence to transform, edit, and enhance digital photography. It offers a streamlined creative workflow where users can upload reference images and guide the AI using detailed text prompts or voice commands.
+                </p>
+                <p class="mb-4" style="font-family: serif; font-size:small; color:cadetblue">
+                    Used technologies:React (v19), TypeScript, Vite, Tailwind CSS, PostCSS, Lucide React, BeerSlider, Fal.ai SDK (@fal-ai/client), Web Speech API.
+                </p>
+                 <a class="btn btn-outline-primary mt-auto align-self-start" href="https://github.com/albiberberi/AI-Photo-Studio">
+                    <span style="font-family: serif; font-size:small; color:rgb(16, 16, 16)">Visit Repo here: <i class="bi bi-github"></i></span>
+                </a>
+            </div>
+
+            <!-- Image Section (natural height) -->
+            <!-- Media Carousel -->
+            <div class="d-flex align-items-center justify-content-center p-3 bg-white" style="flex: 1; min-width: 60%;">
+                <div id="photoStudioCarousel" class="carousel slide w-100 mt-4" data-bs-interval="false" 
+                     style="height: auto; min-height: 600px; max-height: 100%;">
+                    <div class="carousel-inner" style="height: 100%;">
+
+                        <!-- Image Slide 1 -->
+                        <div class="carousel-item active h-100">
+                            <img src="assets\Landing_Page.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="Landing Page">
+                        </div>
+
+                        <!-- Image Slide 2 -->
+                        <div class="carousel-item h-100">
+                            <img src="assets\1.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="UI">
+                        </div>
+
+                        <!-- Image Slide 3 -->
+                        <div class="carousel-item h-100">
+                            <img src="assets\5.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="UI">
+                        </div>
+
+                        <!-- Image Slide 4 -->
+                        <div class="carousel-item h-100">
+                            <img src="assets\6.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="UI">
+                        </div>
+
+                        <!-- Image Slide 5 -->
+                        <div class="carousel-item h-100">
+                            <img src="assets\8.png" class="d-block w-100 h-100" style="object-fit: contain;" alt="UI">
+                        </div>
+
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#photoStudioCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#photoStudioCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <!-- Flex container: column on mobile, row on larger screens -->
+        <div class="d-flex flex-column flex-lg-row align-items-stretch h-100">
+            
+            <!-- Text Section -->
+            <div class="p-3 p-lg-5 d-flex flex-column" style="flex: 1; min-width: 40%;">
                 <h2 class="fw-bolder">The Detroit Throne</h2>
                 <p class="mb-0">
                     The Detroit Throne is an ongoing  project for a bold streetwear brand rooted in Detroit’s culture of resilience and creativity.
                 </p>
-                <p class="mb-0" style="font-family: serif; font-size:small; color:cadetblue">
+                <p class="mb-4" style="font-family: serif; font-size:small; color:cadetblue">
                     Used technologies: Bootstrap.
                 </p>
+                <a class="btn btn-outline-primary mt-auto align-self-start" href="https://github.com/albiberberi/detroit-throne.github.io">
+                    <span style="font-family: serif; font-size:small; color:rgb(16, 16, 16)">Visit Repo here: <i class="bi bi-github"></i></span>
+                </a>
             </div>
 
             <!-- Image Section (natural height) -->
@@ -125,7 +194,7 @@
 
           
             <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+            <section class="py-5 bg-dark text-white">
                 <div class="container px-5 my-5">
                     <div class="text-center">
                         <h2 class="display-4 fw-bolder mb-4">Let's work together</h2>
