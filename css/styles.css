@@ -381,7 +381,7 @@ textarea {
     flex: 0 0 auto; 
     width: 100%;
     position: relative;
-    bottom: -100px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -855,7 +855,7 @@ textarea.form-control {
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;
-  --bs-card-color: ;
+  --bs-card-color:  ;
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
@@ -1477,6 +1477,12 @@ html {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Scale resume and projects pages to 80% */
+.col-lg-11.col-xl-9.col-xxl-8 {
+  transform: scale(0.8);
+  transform-origin: top center;
 }
 .fade-up.visible {
   opacity: 1;
