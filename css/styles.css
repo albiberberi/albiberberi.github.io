@@ -1481,12 +1481,21 @@ html {
 
 /* Scale resume and projects pages to 80% */
 .col-lg-11.col-xl-9.col-xxl-8 {
-  transform: scale(0.8);
-  transform-origin: top center;
+  max-width: 80%;
+  margin: 0 auto;
+  
 }
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Ensure fade-up elements are visible on smaller screens */
+@media (max-width: 991.98px) { /* Targets screens smaller than Bootstrap's 'lg' breakpoint */
+  .fade-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
 }
 
 /* Navbar Transparency Override */
@@ -1551,92 +1560,5 @@ html {
         -webkit-text-fill-color: transparent;
         display: inline-block; /* Needed for transform/bg-clip */
     }
-}
-
-/* Solar System Animation Wrapper */
-.solar-system-wrapper {
-  position: relative;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-.profile.sun {
-  position: absolute;
-  z-index: 10;
-  margin: 0 !important;
-  box-shadow: 0 0 5px rgba(71, 174, 221, 0.5), 0 0 10px rgba(71, 174, 221, 0.3) !important;
-}
-
-/* Orbits */
-.orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: rotate infinite linear;
-  z-index: 1;
-}
-
-/* Planets (Tech Badges) */
-.planet {
-  position: absolute;
-  top: -15px; /* Half of badge height */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* Reverse animation keeping the icon upright */
-  animation: rotate-reverse infinite linear;
-}
-
-/* Orbit Sizes and Speeds */
-.orbit-1 { width: 220px; height: 220px; animation-duration: 15s; }
-.orbit-1 .planet { animation-duration: 15s; }
-
-.orbit-2 { width: 280px; height: 280px; animation-duration: 25s; }
-.orbit-2 .planet { animation-duration: 25s; }
-
-.orbit-3 { width: 340px; height: 340px; animation-duration: 35s; }
-.orbit-3 .planet { animation-duration: 35s; background: rgba(71, 174, 221, 0.2); }
-
-.orbit-4 { width: 400px; height: 400px; animation-duration: 45s; }
-.orbit-4 .planet { animation-duration: 45s; background: rgba(226, 30, 128, 0.2); }
-
-@keyframes rotate {
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-@keyframes rotate-reverse {
-  0% { transform: translateX(-50%) rotate(0deg); }
-  100% { transform: translateX(-50%) rotate(-360deg); }
-}
-
-@media (max-width: 768px) {
-  .solar-system-wrapper {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 120px; 
-    margin-top: 70px;
   }
-  .orbit-1 { width: 200px; height: 200px; }
-  .orbit-2 { width: 250px; height: 250px; }
-  .orbit-3 { width: 300px; height: 300px; }
-  .orbit-4 { width: 350px; height: 350px; }
-}
+  
