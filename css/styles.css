@@ -1561,4 +1561,21 @@ html {
         display: inline-block; /* Needed for transform/bg-clip */
     }
   }
-  
+
+/* AI Photo Studio Carousel Arrows visibility */
+#photoStudioCarousel .carousel-control-prev-icon,
+#photoStudioCarousel .carousel-control-next-icon {
+  filter: invert(1) drop-shadow(0px 1px 3px rgba(255, 255, 255, 0.8));
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#photoStudioCarousel .carousel-control-prev,
+#photoStudioCarousel .carousel-control-next {
+  opacity: 0.8;
+}
+
+#photoStudioCarousel .carousel-control-prev:hover,
+#photoStudioCarousel .carousel-control-next:hover {
+  opacity: 1;
+}
